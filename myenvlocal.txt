@@ -1,0 +1,35 @@
+# Database
+# Use separate variables for better compatibility with special characters in passwords
+# Using Supabase Transaction Pooler (port 6543) or Session Pooler (port 5432)
+# Host aws-1-ap-northeast-1.pooler.supabase.com accepts the user postgres.ishuzczufkhdpnmseicj
+#---------supabase connection----------
+#---school account----
+#DB_HOST=aws-1-ap-south-1.pooler.supabase.com
+#DB_PORT=5432
+#DB_USER=postgres.gqhgcfofwpjvpsjdzhth
+#DB_PASSWORD=ww3Jd6TPh94rl3PT
+#DB_NAME=postgres
+
+# Fallback (optional, can be used if needed but preferred above)
+# DATABASE_URL=postgresql://postgres:1024Roy!%231940@db.ishuzczufkhdpnmseicj.supabase.co:5432/postgres
+
+#-------- Local host connection ---------
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=postgres
+DB_NAME=nextjsdb
+
+# Better Auth
+BETTER_AUTH_SECRET=NzhkM2Y5ZTJmYjYwM2M0YmU4YjA1ODcyM2M1YjY5NDA3ZDAyM2M1ZTg5M2Y0YjU2YmU4YjA1ODcyM2M1YjY5NDA3ZDAyM2M1ZTg5M2Y0YjU2
+
+#-----localhost
+BETTER_AUTH_URL=http://localhost:3000
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+#---vercel-----
+#BETTER_AUTH_URL=https://basicnextapp.vercel.app
+#NEXT_PUBLIC_APP=https://basicnextapp.vercel.app
+
+# Session
+SESSION_TIMEOUT_VALUE=2 hours
