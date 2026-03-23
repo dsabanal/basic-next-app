@@ -216,10 +216,13 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   ];
 
   const adminItems = [
-    { label: "User Management", onClick: () => handleAction("User Management") },
-    // CHANGED: Removed router.push and replaced with handleAction to show the alert
-    { label: "Role Management", onClick: () => handleAction("Role Management") },
-  ];
+  { label: "User Management",      onClick: () => handleAction("User Management") },
+  { label: "Role Management",      onClick: () => handleAction("Role Management") },
+  // ── NEW ──────────────────────────────────────────────────────────────
+  { label: "Units of Measure",     onClick: () => { setOpenMenu(null); router.push("/dashboard/admin/uom"); } },
+  { label: "Test Categories",      onClick: () => { setOpenMenu(null); router.push("/dashboard/admin/testcategories"); } },
+  { label: "Medical Tests",        onClick: () => { setOpenMenu(null); router.push("/dashboard/admin/medicaltests"); } },
+];
 
   const handleTimeoutLogout = async () => {
     await signOut();
